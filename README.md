@@ -1,2 +1,2 @@
-# axiscss
-The repository for Axis CSS.
+# light-css
+The repository for Light CSS.
