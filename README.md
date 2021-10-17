@@ -1,2 +1,2 @@
-# light-css
-The repository for Light CSS.
+# fast-css
+The repository for Fast-CSS.
