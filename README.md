@@ -1,2 +1,2 @@
 # colory-css
-The repository for Colory CSS. Docs are at http://colory-css.rf.gd/1.1.1/docs.html
+The repository for Colory CSS. Site at http://colory-css.rf.gd/
