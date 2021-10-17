@@ -1,2 +1,2 @@
-# fast-css
-The repository for Fast-CSS.
+# colory-css
+The repository for Colory CSS.
