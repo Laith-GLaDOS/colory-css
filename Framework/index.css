@@ -1,8 +1,9 @@
 /* Button color-designs */
 
+/* Blue button */
+
 .btn.blue {
     border: none;
-    border-color: rgb(55, 84, 139);
     border-radius: 4px;
     background-color: rgb(11, 112, 207);
     color: #000;
@@ -23,9 +24,10 @@
     background-color: rgb(55, 84, 139);
 }
 
+/* Gray button */
+
 .btn.gray {
     border: none;
-    border-color: rgb(75, 75, 75);
     border-radius: 4px;
     background-color: rgb(129, 129, 129);
     color: #000;
@@ -46,9 +48,10 @@
     background-color: rgb(75, 75, 75);
 }
 
+/* Green button */
+
 .btn.green {
     border: none;
-    border-color: rgb(111, 175, 92);
     border-radius: 4px;
     background-color: rgb(57, 207, 11);
     color: #000;
@@ -69,9 +72,10 @@
     background-color: rgb(111, 175, 92);
 }
 
+/* Red button */
+
 .btn.red {
     border: none;
-    border-color: #f0a8af;
     border-radius: 4px;
     background-color: #d53343;
     color: #000;
@@ -92,9 +96,10 @@
     background-color: #f0a8af;
 }
 
+/* Yellow button */
+
 .btn.yellow {
     border: none;
-    border-color: #ffc107;
     border-radius: 4px;
     background-color: #ffc107;
     color: #000;
@@ -115,19 +120,275 @@
     background-color: #ecd182;
 }
 
+/* Neon blue button */
+
+.btn.neonblue {
+    border: none;
+    border-radius: 4px;
+    background-color: #42FBF2;
+    color: rgb(49, 146, 70);
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: ease-out 0.3s;
+}
+
+.btn.neonblue:hover {
+    cursor: pointer;
+}
+
+.btn.neonblue:active {
+    transition: none;
+    background-color: #98fffa;
+}
+
+/* Purple button */
+
+.btn.purple {
+    border: none;
+    border-radius: 4px;
+    background-color: #a08cd8;
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: ease-out 0.3s;
+}
+
+.btn.purple:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn.purple:active {
+    transition: none;
+    background-color: #a48ca4;
+}
+
 /* ------------------------------------
 Button animation designs */
+
+/* More of a hover effect tweaker than an animation but meh I will just leave it here cuz why not lol */
+
+.btn.nopointeronhover:hover { cursor: default; }
+.btn.blue.solid.nopointeronhover:hover { cursor: default; }
+.btn.gray.solid.nopointeronhover:hover { cursor: default; }
+.btn.green.solid.nopointeronhover:hover { cursor: default; }
+.btn.red.solid.nopointeronhover:hover { cursor: default; }
+.btn.yellow.solid.nopointeronhover:hover { cursor: default; }
+.btn.neonblue.solid.nopointeronhover:hover { cursor: default; }
+.btn.neonblue.neoneffectonhover.nopointeronhover:hover { cursor: default; }
+.btn.purple.solid.nopointeronhover:hover { cursor: default; }
+
+/* Zoom on hover effect */
 
 .zoomonhover:hover {
     width: auto;
     height: auto;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+/* Neon effect on hover for neon blue buttons */
+
+.btn.neonblue.neoneffectonhover {
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgb(49, 146, 70);
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: ease-out 0.3s;
+    border: 3px solid #42FBF2;
+    position: relative;
+    z-index: 1;
+}
+
+.btn.neonblue.neoneffectonhover:hover {
+    cursor: pointer;
+}
+
+.btn.neonblue.neoneffectonhover:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42FBF2;
+}
+
+.btn.neonblue.neoneffectonhover:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 /* ------------------------------------
 Button designs */
 
+/* Solid button design */
 
+.btn.blue.solid { /* Blue */
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(11, 112, 207);
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn.blue.solid:hover {
+    cursor: pointer;
+}
+
+.btn.blue.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
+
+.btn.gray.solid { /* Gray */
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(129, 129, 129);
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn.gray.solid:hover {
+    cursor: pointer;
+}
+
+.btn.gray.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
+
+.btn.green.solid { /* Green */
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(57, 207, 11);
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn.green.solid:hover {
+    cursor: pointer;
+}
+
+.btn.green.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
+
+.btn.red.solid { /* Red */
+    border: none;
+    border-radius: 4px;
+    background-color: #d53343;
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn.red.solid:hover {
+    cursor: pointer;
+}
+
+.btn.red.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
+
+.btn.yellow.solid { /* Yellow */
+    border: none;
+    border-radius: 4px;
+    background-color: #ffc107;
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn.yellow.solid:hover {
+    cursor: pointer;
+}
+
+.btn.yellow.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
+
+.btn.neonblue.solid { /* Neon blue */
+    border: none;
+    border-radius: 4px;
+    background-color: #ffc107;
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn.neonblue.solid:hover {
+    cursor: pointer;
+}
+
+.btn.neonblue.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
+
+.btn.solid.purple { /* Purple */
+    border: none;
+    border-radius: 4px;
+    background-color: #a08cd8;
+    color: #000;
+    font-size: 22px;
+    height: auto;
+    width: auto;
+    outline: none;
+    transition: ease-out 0.3s;
+}
+
+.btn.solid.purple:hover {
+    cursor: pointer;
+}
+
+.btn.purple.solid.zoomonhover:hover {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+}
 
 /* ------------------------------------
 Blur effects */
@@ -176,3 +437,13 @@ Misc */
 .header.dark { /* Preset header design dark plugin */
     background-color: #282c34;
 }
+
+.colored-text.white { color: white; }
+.colored-text.black { color: black; }
+.colored-text.blue { color: #6fa4db; }
+.colored-text.gray { color: rgb(129, 129, 129); }
+.colored-text.green { color: #72d08a; }
+.colored-text.red { color: #d53343; }
+.colored-text.yellow { color: #ffc107; }
+.colored-text.neonblue { color: #42FBF2; }
+.colored-text.purple { color: #a28dd5; }
